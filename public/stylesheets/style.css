@@ -5,8 +5,6 @@ body {
 }
 
 
-
-
 #nav-bar {
   background-color: #294b58;
   display: flex;
@@ -14,7 +12,6 @@ body {
   justify-content: space-between;
   padding: 9px;
   border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 #search {
@@ -153,4 +150,59 @@ body {
   width: auto;
   padding: 10px;
   background-color: #851717;
+}
+
+#signup-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 12px;
+  height: 80vh;
+  /* background-image: url(../images/svg/personal.svg); */
+  /* justify-content: center; */
+} 
+
+#signup-form {
+  display: flex;
+  width: 50%;
+  padding-top: 2%;
+  padding-right: 2%;
+  flex-direction: column;
+}
+
+#signup-form input {
+  margin: 7px;
+  height: 40px;
+  padding: 5px;
+  font-size: 20px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+#signup-label {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px 20px; 
+  font-size: 35px; 
+  font-weight: bold;
+  color: #151c2b;
+  font-family: monospace;
+  text-shadow: 2px 2px #5e5e5e
+}
+
+#signup-form button {
+  margin-top: 13px;
+  height: 45px;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 9px;
+  background-color: #1c273b;
+  font-size: 20px;
+}
+
+#signup-form a {
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
 }
