@@ -1,8 +1,156 @@
 body {
-  padding: 50px;
+  /* padding: 5px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(210, 227, 241);
 }
 
-a {
-  color: #00B7FF;
+
+
+
+#nav-bar {
+  background-color: #294b58;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 9px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#search {
+  border-radius: 5px;
+  height: 40%;
+  width: auto;
+  padding: 2px;
+  padding-left: 12px;
+  border-style: none;
+}
+
+.btn {
+  width: auto;
+  height: 47%;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-radius: 6px;
+  /* border-style: none; */
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+#rightNav {
+    align-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
+}
+
+#nav-bar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#nav-bar-list li {
+  margin: 10px;
+}
+
+#nav-bar-list li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+}
+
+.option-card {
+  background-color: aliceblue;
+  height: 260px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  margin: 10px;
+}
+
+.overlay-text {
+  padding: 10px 20px; 
+  font-size: 30px; 
+  font-weight: bold;
+  text-align: center;
+  font-family: monospace;
+  text-shadow: 2px 2px #dadada
+}
+
+.option-card img {
+  width: 95%;
+  height: 95%;
+}
+
+.option-card:hover {
+  background-color: rgb(195, 224, 250);
+}
+
+.registered-contact-list {
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+}
+
+.registered-contact-list li {
+  margin: 2px;
+  list-style: none;
+  background-color: #d5f3ff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content:space-between;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.code-sent {
+  text-align: center;
+  align-content: center;
+  border-radius: 12px;
+  color: #ffffff;
+  height: 60%;
+  width: auto;
+  padding: 10px;
+  background-color: #1d3541;
+}
+
+.detail-btn {
+  text-align: center;
+  align-content: center;
+  border-radius: 12px;
+  color: #dadada;
+  height: 70%;
+  width: auto;  
+  padding: 10px;
+  background-color: #0a378a;
+}
+
+.user-number {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.delete-btn {
+  text-align: center;
+  align-content: center;
+  border-radius: 12px;
+  color: #dadada;
+  height: 70%;
+  width: auto;
+  padding: 10px;
+  background-color: #851717;
 }

@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
+    <title>Pluginsd</title>
+    {{!-- <script src="https://cdn.tailwindcss.com"></script> --}}
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <nav id="nav-bar">
+    <div>
+        <ul id="nav-bar-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+
+    <div id="rightNav">
+        <input type="text" 
+        name="search" 
+        id="search" 
+        placeholder="Search">
+        <button class="btn btn-sm">Search</button>
+    </div>
+  </nav>
     {{{body}}}
   </body>
 </html>
