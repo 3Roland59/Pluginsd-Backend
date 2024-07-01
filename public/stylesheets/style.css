@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   /* padding: 5px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -9,6 +13,8 @@ body {
   background-color: #294b58;
   display: flex;
   flex-direction: row;
+  height: 70px;
+  align-items: center;
   justify-content: space-between;
   padding: 9px;
   border-radius: 5px;
@@ -49,12 +55,31 @@ body {
 #nav-bar-list {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   list-style: none;
 }
 
 #nav-bar-list li {
   margin: 10px;
+}
+
+#logo-container {
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 20%; */
+}
+
+#logo-container img {
+  height: 56px;
+  border-radius: 12px;
+}
+
+#logo-container h2 {
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 200%;
 }
 
 #nav-bar-list li a {
@@ -111,6 +136,11 @@ body {
   height: 50px;
   border-radius: 10px;
   padding: 10px;
+}
+.dashboard-container {
+  height: 60vh;
+  /* outline-style: solid;
+  outline-color: #0a378a; */
 }
 
 .code-sent {
@@ -205,4 +235,14 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 18px;
+}
+
+/* a:hove */
+
+footer {
+  background-color: #033447;
+  height: 80px;
+  align-content: center;
+  margin-top: 12px;
+  border-radius: 12px;
 }

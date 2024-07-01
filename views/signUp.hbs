@@ -1,10 +1,10 @@
 <div id="signup-container">
     <img src="/images/svg/personal.svg">
-    <form id="signup-form">
+    <form id="signup-form" method="POST" action="/accounts/login">
         <h1 id="signup-label">Sign Up</h1>
         {{!-- <img src="/images/svg/reg.svg" > --}}
-        <input placeholder="Email">
-        <input placeholder="Password" type="password">
+        <input name="email" type="email" placeholder="Email">
+        <input name="password" placeholder="Password" type="password">
         <button type="submit">Submit</button>
         <a href="/accounts/login">Already Have An Account</a>
     </form>
