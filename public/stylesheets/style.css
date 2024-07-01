@@ -1,11 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
   /* padding: 5px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: rgb(210, 227, 241);
+  margin: 0;
 }
 
 
@@ -14,10 +11,11 @@ body {
   display: flex;
   flex-direction: row;
   height: 70px;
+  /* width: 100%; */
   align-items: center;
   justify-content: space-between;
   padding: 9px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 #search {
@@ -242,7 +240,8 @@ body {
 footer {
   background-color: #033447;
   height: 80px;
+  width: 100%;
   align-content: center;
   margin-top: 12px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
