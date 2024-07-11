@@ -44,6 +44,10 @@ body {
     align-content: center;
 }
 
+#rightNav h2 {
+  color: #ffffff;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;  
@@ -59,7 +63,7 @@ body {
 }
 
 #nav-bar-list li {
-  margin: 10px;
+  margin: 0px;
 }
 
 #logo-container {
