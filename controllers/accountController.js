@@ -49,7 +49,7 @@ module.exports.loginController = async (req, res) => {
         }
         const token = jwt.sign(
             {userId: user.id, email:user.email},
-            process.env.SECRET_KEY || "1234!@#%<{*&)",
+            process.env.JWT_SECRET_KEY,
             {expiresIn: "1h"}
         )
         return res.status(200).json({message:"Details exists", data:user, token})
