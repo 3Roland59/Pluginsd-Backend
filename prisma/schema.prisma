@@ -26,7 +26,7 @@ model Company {
   companyName String  @unique 
   managerId   Int     @unique
   manager     User    @relation(fields: [managerId], references: [id])
-  registeredNumbers RegisteredNumbers[]
+  registeredNumbers RegisteredNumbers[] 
   companyLogs Logs[]
 }
 
@@ -34,7 +34,7 @@ model RegisteredNumbers {
   id         Int       @id @default(autoincrement())
   number     String
   codeSent   Int?
-  companyId  Int
+  companyId  Int 
   company    Company   @relation(fields: [companyId], references: [companyId], onDelete: Cascade)
 }
 
