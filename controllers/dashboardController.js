@@ -14,10 +14,16 @@ module.exports.registerCompany = async (req, res) => {
     const companyCheck = await companyRepo.filter(companyName, req.user.userId)
 
     if (companyCheck) return res.status(409).json(
-        {message:"Company with such name already exist"}
+        { message: "Company with such name already exist" }
     )
 
     const company = await companyRepo.createCompany(companyName, req.user.userId)
 
-    return res.status(201).json({message:"Company Created", company})
+    return res.status(201).json({ message: "Company Created", company })
+}
+
+
+module.exports.getAllNumbers = async (req, res) => {
+    const comanyId = req.params.comanyId
+
 }
